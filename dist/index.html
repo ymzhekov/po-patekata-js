@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Български блог за близки пътувания, планини и време навън.">
+<title>По пътеката — блог за пътувания</title>
+<link rel="stylesheet" href="style.css">
+<script src="blog.js" defer></script>
+</head>
+<body>
+<header class="top" id="home">
+  <a class="brand" href="#home" aria-label="По пътеката — начало"><span aria-hidden="true">▲</span> По пътеката<span class="period">.</span></a>
+  <nav aria-label="Основна навигация">
+    <a href="#home">Начало</a><a href="#stories">Истории</a><a href="#routes">Маршрути</a><a href="#gear">Екипировка</a><a href="#about">За блога</a>
+  </nav>
+</header>
+<main>
+<section class="hero" aria-label="Избрани истории" aria-roledescription="карусел">
+  <div class="slide first">
+    <div class="hero-copy"><p class="eyebrow">ПЛАНИНСКИ МАРШРУТ</p><h1>Сутрин над<br>облаците.</h1><p>Първа светлина, тиха пътека и един свободен уикенд в планината.</p><a class="button" href="#routes">Към маршрута <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="slide second" hidden>
+    <div class="hero-copy"><p class="eyebrow">ПЪТЕПИС</p><h2>Край водата.</h2><p>За онези дни, в които най-добрият план е да оставиш място за отклонения.</p><a class="button" href="#lake">Прочети историята <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="slide third" hidden>
+    <div class="hero-copy"><p class="eyebrow">ПРАКТИЧЕН НАРЪЧНИК</p><h2>По-лека раница.</h2><p>Какво си струва да вземеш за един ден навън.</p><a class="button" href="#gear">Виж списъка <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="controls" hidden>
+    <div class="dots" aria-label="Избор на слайд"><button type="button" aria-label="Сутрин над облаците" aria-pressed="true"></button><button type="button" aria-label="Край водата" aria-pressed="false"></button><button type="button" aria-label="По-лека раница" aria-pressed="false"></button></div>
+    <div class="arrows"><button type="button" id="prev" aria-label="Предишен слайд">←</button><button type="button" id="next" aria-label="Следващ слайд">→</button></div>
+  </div>
+  <p class="sr-only" id="status" aria-live="polite"></p>
+</section>
+<section id="stories" class="stories">
+  <div class="section-heading"><div><p class="eyebrow">ДНЕВНИК НА ОТКРИТО</p><h2>Последни истории</h2></div><p>Идеи за следващия свободен ден.</p></div>
+  <div class="grid">
+    <article id="routes"><div class="photo first"></div><div class="article-copy"><p class="eyebrow">МАРШРУТИ</p><h3>Сутрин над облаците</h3><p>Ранна разходка по широките пътеки на Витоша.</p><details><summary>Прочети</summary><p>Ако ти се ходи на Витоша, започни от хижа „Алеко“ и следвай маркировката към Черни връх. Тръгни рано, за да хванеш светлината над Софийското поле, и провери прогнозата преди излизане. При силен вятър или мъгла остави върха за друг ден.</p></details></div></article>
+    <article id="lake"><div class="photo second"></div><div class="article-copy"><p class="eyebrow">ПЪТЕПИС</p><h3>Край водата</h3><p>Един бавен следобед на язовир Батак.</p><details><summary>Прочети</summary><p>Отидох до Цигов чарк без план за деня. Вървях покрай водата, докато намерих място с гледка към отсрещния бряг. Седнах с термос чай и останах, докато вятърът стихна и във водата се показаха отраженията на боровете.</p></details></div></article>
+    <article id="gear"><div class="photo third"></div><div class="article-copy"><p class="eyebrow">ЕКИПИРОВКА</p><h3>По-лека раница</h3><p>Кратък списък за еднодневна разходка.</p><details><summary>Прочети</summary><p>Започни с вода, храна, ветровка и резервен топъл слой. Добави карта, зареден телефон, челник, слънцезащита и малка аптечка. Нагласи списъка според сезона, прогнозата и дължината на маршрута.</p></details></div></article>
+  </div>
+</section>
+</main>
+<footer id="about"><h2>За блога</h2><p>„По пътеката“ събира разкази от близки пътувания и идеи за повече време навън.</p><a href="#home">Обратно нагоре ↑</a></footer>
+</body>
+</html>
