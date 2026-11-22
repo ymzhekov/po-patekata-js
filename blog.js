@@ -36,7 +36,7 @@ carousel.addEventListener('keydown', (event) => {
   showSlide(activeSlide + direction);
   if (dots.includes(document.activeElement)) dots[activeSlide].focus();
 });
-carousel.querySelectorAll('.slide a').forEach((link) => {
+carousel.querySelectorAll('.slide a.button').forEach((link) => {
   link.addEventListener('click', () => {
     const article = document.querySelector(link.hash);
     article.querySelector('details').open = true;
