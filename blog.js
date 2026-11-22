@@ -3,6 +3,12 @@ const slides = [...carousel.querySelectorAll('.slide')];
 const controls = carousel.querySelector('.controls');
 const dots = [...controls.querySelectorAll('.dots button')];
 const status = carousel.querySelector('#status');
+// const elements = document.getElementsByTagName('section');
+const header = document.getElementById('home');
+const newItem = document.createElement('span');
+newItem.textContent = 'Orange';
+header.prepend(newItem);
+console.log(header);
 let activeSlide = 0;
 
 function showSlide(index) {
@@ -30,7 +36,7 @@ carousel.addEventListener('keydown', (event) => {
   showSlide(activeSlide + direction);
   if (dots.includes(document.activeElement)) dots[activeSlide].focus();
 });
-carousel.querySelectorAll('.slide a').forEach((link) => {
+carousel.querySelectorAll('.slide a.button').forEach((link) => {
   link.addEventListener('click', () => {
     const article = document.querySelector(link.hash);
     article.querySelector('details').open = true;
